@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg.jpeg");
+    text-align: center;
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    background: rgb(36,29,156);
+    background: linear-gradient(90deg, rgba(36,29,156,1) 0%, rgba(0,212,255,1) 100%);
+    font-size: 80px;
+    text-align: center;
+    display: inline-block;
+    background-clip: text;
+    /* обрезка фона для текста */
+    -webkit-background-clip: text;
+    color: transparent;
+    /* обводка для текста */
+    -webkit-text-stroke: 2px white;
+    font-weight: normal;
+    margin: 50px;
+}
+h3{
+    font-family: 'Rock Salt', cursive;
+    background: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#game{
+
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+.map{
+    width: 100%;
+}
+.pirate{
+    width: 40px;
+    top: 10px;
+    position: absolute;
+    left: 70px;
+    transition: 2s;
+    /* для клика сквозь картнинку */
+    pointer-events: none; 
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%,-50%) scale(0) rotate(1080deg); 
+    transition: 3s;
+
+}
+.newGame{
+    font-family: 'Rock Salt', cursive;
+    background: white;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+.newGame:hover{
+background-image: url("boom.gif");
+background-size: cover;
+background-position: center;
+}
